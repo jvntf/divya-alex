@@ -12,7 +12,7 @@ export const Box = styled.div`
 export const theme = {
   colors: {
     primary: '#03A95C',
-    background: '#cbda79'
+    background:'#8AC181'
   },
   fonts: {
     size: {

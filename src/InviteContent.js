@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Box, Text, theme, H1, H2, H3 } from "./Shared";
+import { Box, theme, H1, H2, H3 } from "./Shared";
 import Graphic from "./assets/graphic.png";
 
 const InviteContent = () => {
@@ -21,11 +21,8 @@ const Content = styled(Box)`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 5%;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
-  background: ${theme.colors.background};
 `;
 
 const Title = styled(H1)`
@@ -34,7 +31,8 @@ const Title = styled(H1)`
   border: 2px solid ${theme.primary};
 `;
 const StyledImage = styled.img`
-  max-height: 60%;
+  max-height: 70%;
+  max-width: 60%;
 `;
 
 const Buttons = styled(Box)`
@@ -67,7 +65,8 @@ const Clickable = styled(H3)`
       transform: rotate(2deg);
     }
   }
-  :hover {
+
+  &:hover {
     cursor: pointer;
     animation: wiggle infinite 1s alternate;
   }

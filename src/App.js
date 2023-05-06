@@ -1,15 +1,25 @@
 import styled from "styled-components";
 import "./App.css";
-import { Box } from "./Shared";
+import { Box, theme} from "./Shared";
 import Ticker from "./Ticker";
 import InviteContent from "./InviteContent";
 
 function App() {
   return (
     <div className="App">
-      <Wrapper>
+      <Wrapper p={3}>
+
         {/*<Ticker /> */}
+        <Box
+          backgroundColor={theme.colors.background}
+          width={1}
+          height={'100%'}
+          style={{
+            display: 'flex'
+          }}
+        >
         <InviteContent />
+        </Box>
       </Wrapper>
     </div>
   );
@@ -22,6 +32,6 @@ const Wrapper = styled(Box)`
   display:flex;
   flex-direction: column;
   justify-content: center;
-  color: blue;
   position: absolute;
+  box-sizing: border-box;
 `;
