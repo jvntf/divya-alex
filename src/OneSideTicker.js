@@ -16,43 +16,34 @@ const OneSideTicker = () => {
         </Detail>
         <Spacer src={Leaf} />
       </Marquee>
+
+      <Marquee>
+        <Detail>
+          Christine Farias and Gerard Farias together with Laura Axelsen and
+          Feliciano de Jesús Mejía invite you to the wedding of their children
+        </Detail>
+        <Spacer src={Leaf} />
+        <Detail>
+          Christine Farias and Gerard Farias together with Laura Axelsen and
+          Feliciano de Jesús Mejía invite you to the wedding of their children
+        </Detail>
+        <Spacer src={Leaf} />
+      </Marquee>
+
     </Wrapper>
   );
 };
 
 export default OneSideTicker;
 
-const Wrapper = styled(Box)`
-  //position: absolute;
-  background: white;
-  max-width: 100%;
-  overflow: hidden;
-  border-bottom: 4px solid ${theme.colors.primary};
-  order: 1;
-
-  top: 0;
-  left: 0;
-  //height: 24px;
-
-  @media screen and (min-width: 450px) {
-    order: 2;
-    border-bottom: unset;
-    border-top: 4px solid ${theme.colors.primary};
-    top: unset;
-    bottom: 0;
-    //height: 2.5vw;
-  }
-
-  * {
-    vertical-align: middle;
-  }
-`;
-
 const Marquee = styled(Box)`
+
+/*
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
   animation: marquee 20s linear infinite;
+  */
 
   ${Detail} {
     display: inline-block;
@@ -70,6 +61,47 @@ const Marquee = styled(Box)`
     }
   }
 `;
+
+
+const Wrapper = styled(Box)`
+
+  border-bottom: 4px solid ${theme.colors.primary};
+  order: 1;
+
+  @media screen and (min-width: 450px) {
+    order: 2;
+    border-bottom: unset;
+    border-top: 4px solid ${theme.colors.primary};
+  }
+
+
+
+  --gap: 1rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+
+${Marquee} {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+`;
+
 const Spacer = styled.img`
   margin: 0 4px;
   height: ${theme.fonts.size.detail * 1.5}px;
