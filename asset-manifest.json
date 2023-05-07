@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/divya-alex/static/css/main.0eb3a482.css",
-    "main.js": "/divya-alex/static/js/main.961785a6.js",
+    "main.js": "/divya-alex/static/js/main.e3e090af.js",
     "static/js/787.77b18b7e.chunk.js": "/divya-alex/static/js/787.77b18b7e.chunk.js",
     "static/media/graphic.png": "/divya-alex/static/media/graphic.c059053eb2445f028416.png",
     "index.html": "/divya-alex/index.html",
     "main.0eb3a482.css.map": "/divya-alex/static/css/main.0eb3a482.css.map",
-    "main.961785a6.js.map": "/divya-alex/static/js/main.961785a6.js.map",
+    "main.e3e090af.js.map": "/divya-alex/static/js/main.e3e090af.js.map",
     "787.77b18b7e.chunk.js.map": "/divya-alex/static/js/787.77b18b7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0eb3a482.css",
-    "static/js/main.961785a6.js"
+    "static/js/main.e3e090af.js"
   ]
 }
