@@ -26,10 +26,11 @@ export const theme = {
     },
     lineHeight: {
       h1: 110,
+      h1mobile: 50,
       h2: 32,
       h3: 24,
       body: 14,
-      detail: 18
+      detail:14
     },
     weight: {
       h1: 400,
@@ -59,6 +60,7 @@ export const H3 = styled(Text)`
 `
 
 export const Detail = styled(Text)`
+  font-size: ${theme.fonts.size.detail}px;
   line-height: ${theme.fonts.lineHeight.detail}px;
   font-weight: ${props => props.bold ? 700 : theme.fonts.weight.detail};
   text-transform: uppercase;

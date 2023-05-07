@@ -3,19 +3,10 @@ import { Box, theme, H1, H2, H3, Detail } from "./Shared";
 
 const Event = () => {
   return (
-    <Box
-      p={3}
-      style={{
-        placeSelf: "flex-end",
-        display: "flex",
-        flexDirection: "column",
-        gap: "4px",
-        width: "200px",
-        maxWidth: "80%",
-        padding: '16px 16px'
-      }}
-    >
-      <H2 fontSize={[theme.fonts.size.h2]} mb={theme.fonts.size.h2}>July 22, 2023</H2>
+    <Wrap>
+      <H2 fontSize={[theme.fonts.size.h2]} mb={theme.fonts.size.h2}>
+        July 22, 2023
+      </H2>
       <Box
         style={{
           display: "flex",
@@ -68,7 +59,7 @@ const Event = () => {
       </Buttons>
 
       <Detail fontSize={[theme.fonts.size.detail]}>Details to follow</Detail>
-    </Box>
+    </Wrap>
   );
 };
 
@@ -85,8 +76,9 @@ const Clickable = styled(H3)`
   display: flex;
   justify-content: center;
   color: ${theme.colors.white};
+  font-size: 15px;
   text-decoration: none;
-  padding: 2px;
+  padding: 4px;
   ${(props) =>
     props.filled
       ? `background: ${theme.colors.primary}`
@@ -113,5 +105,18 @@ const Clickable = styled(H3)`
   &:hover {
     cursor: pointer;
     animation: wiggle infinite 1s alternate;
+  }
+`;
+
+const Wrap = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 200px;
+  max-width: 80%;
+  place-self: flex-start;
+
+  @media screen and (min-width: 450px) {
+    place-self: flex-end;
   }
 `;
