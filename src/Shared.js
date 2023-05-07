@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { typography, space, color, layout } from 'styled-system'
+import { system, typography, space, color, layout } from 'styled-system'
 
 export const Box = styled.div`
   ${typography}
@@ -49,19 +49,19 @@ export const H1 = styled(Text)`
   font-weight: ${theme.fonts.weight.h1};
 `
 export const H2 = styled(Text)`
-  font-size: ${theme.fonts.size.h2}px;
   line-height: ${theme.fonts.lineHeight.h2}px;
   font-weight: ${theme.fonts.weight.h2};
 `
 export const H3 = styled(Text)`
-  font-size: ${theme.fonts.size.h3}px;
   line-height: ${theme.fonts.lineHeight.h3}px;
   font-weight: ${theme.fonts.weight.h3};
 `
 
 export const Detail = styled(Text)`
-  font-size: ${theme.fonts.size.detail}px;
   line-height: ${theme.fonts.lineHeight.detail}px;
   font-weight: ${theme.fonts.weight.detail};
   text-transform: uppercase;
 `;
+
+
+

@@ -7,15 +7,18 @@ import InviteContent from "./InviteContent";
 function App() {
   return (
     <div className="App">
-      <Wrapper p={4}>
+      <Wrapper>
 
-        {/*<Ticker /> */}
+        <Ticker />
         <Box
+
           backgroundColor={theme.colors.background}
           width={1}
           height={'100%'}
           style={{
-            display: 'flex'
+            display: 'flex',
+            border: '32px solid white',
+            boxSizing: 'border-box'
           }}
         >
         <InviteContent />

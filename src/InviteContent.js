@@ -33,24 +33,78 @@ const InviteContent = () => {
             gap: "8px",
           }}
         >
-          <H2>July 22, 2023</H2>
-          <H3>Nuptial Mass 2 PM</H3>
-          <Detail mb={2}>
+          <H2
+            fontSize={[
+              theme.fonts.size.h2 * 0.5,
+              theme.fonts.size.h2 * 0.75,
+              theme.fonts.size.h2,
+            ]}
+          >
+            July 22, 2023
+          </H2>
+          <H3
+            fontSize={[
+              theme.fonts.size.h3 * 0.5,
+              theme.fonts.size.h3 * 0.75,
+              theme.fonts.size.h3,
+            ]}
+          >
+            Nuptial Mass 2 PM
+          </H3>
+          <Detail
+            mb={2}
+            fontSize={[
+              theme.fonts.size.detail * 0.7,
+              theme.fonts.size.detail * 0.85,
+              theme.fonts.size.detail,
+            ]}
+          >
             Church of St. Leo the Great 176 Ridgeway Avenue Oakland, California
           </Detail>
 
-          <H3>Dinner Receptioni 5 PM</H3>
-          <Detail>
+          <H3
+            fontSize={[
+              theme.fonts.size.h3 * 0.5,
+              theme.fonts.size.h3 * 0.75,
+              theme.fonts.size.h3,
+            ]}
+          >
+            Dinner Receptioni 5 PM
+          </H3>
+          <Detail
+            fontSize={[
+              theme.fonts.size.detail * 0.7,
+              theme.fonts.size.detail * 0.85,
+              theme.fonts.size.detail,
+            ]}
+          >
             El Cerrito Community Center 7007 Moeser Lane El Cerrito, California
           </Detail>
-          <Buttons width={1}>
-            <Clickable filled as="a">
+          <Buttons
+            width={1}
+            fontSize={[
+              theme.fonts.size.detail * 0.7,
+              theme.fonts.size.detail * 0.85,
+              theme.fonts.size.detail,
+            ]}
+          >
+            <Clickable filled as="a" py={[1, 2, 2]} px={[1, 2, 4]}>
               RSVP
             </Clickable>
-            <Clickable as="a">Gifts</Clickable>
+            <Clickable as="a" py={[1, 2, 2]} px={[1, 2, 4]}>
+              Gifts
+            </Clickable>
           </Buttons>
 
-          <Detail>Details to follow</Detail>
+          <Detail
+            fontSize={[
+              theme.fonts.size.detail * 0.7,
+              theme.fonts.size.detail * 0.85,
+              theme.fonts.size.detail,
+            ]}
+          >
+            Details to follow
+          </Detail>
         </Box>
       </TextContainer>
     </Content>
@@ -100,7 +154,7 @@ const Buttons = styled(Box)`
 `;
 
 const Clickable = styled(H3)`
-  padding: 4px 16px;
+  display: flex;
   color: ${theme.colors.white};
   ${(props) =>
     props.filled
