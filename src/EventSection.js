@@ -12,6 +12,7 @@ const Event = () => {
         gap: "4px",
         width: "200px",
         maxWidth: "80%",
+        padding: ' 0 16px'
       }}
     >
       <H2 fontSize={[theme.fonts.size.h2]} mb={theme.fonts.size.h2}>July 22, 2023</H2>
