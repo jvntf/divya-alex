@@ -37,19 +37,11 @@ const OneSideTicker = () => {
 export default OneSideTicker;
 
 const Marquee = styled(Box)`
-
-/*
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: marquee 20s linear infinite;
-  */
-
   ${Detail} {
     display: inline-block;
     color: ${theme.colors.primary};
-    font-size: 1vw;
-    margin: 0.5vw 0;
+    font-size: ${theme.fonts.size.detail}px;
+    margin: 2px 0;
   }
 
   @keyframes marquee {
@@ -89,7 +81,7 @@ ${Marquee} {
   justify-content: space-around;
   gap: var(--gap);
   min-width: 100%;
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 @keyframes scroll {
