@@ -18,6 +18,7 @@ export const theme = {
   fonts: {
     size: {
       h1: 100,
+      h1mobile: 44,
       h2: 24,
       h3: 18,
       body: 12,

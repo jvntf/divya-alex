@@ -9,13 +9,10 @@ function App() {
     <div className="App">
       <Wrapper>
         <Box
-
-          backgroundColor={theme.colors.background}
           width={1}
           height={'100%'}
           style={{
             display: 'flex',
-            border: '32px solid white',
             boxSizing: 'border-box'
           }}
         >
@@ -28,11 +25,18 @@ function App() {
 
 export default App;
 const Wrapper = styled(Box)`
+  position: absolute;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+
   display:flex;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
   box-sizing: border-box;
+  padding: 32px;
+
+  @media screen and (min-width: 450px) {
+    height: 100%;
+  }
+
 `;
