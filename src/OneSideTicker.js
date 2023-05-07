@@ -29,7 +29,6 @@ const OneSideTicker = () => {
         </Detail>
         <Spacer src={Leaf} />
       </Marquee>
-
     </Wrapper>
   );
 };
@@ -54,19 +53,18 @@ const Marquee = styled(Box)`
   }
 `;
 
-
 const Wrapper = styled(Box)`
-
   border-bottom: 4px solid ${theme.colors.primary};
   order: 1;
+  height: 24px;
 
   @media screen and (min-width: 450px) {
+    height: 2.5vw;
+
     order: 2;
     border-bottom: unset;
     border-top: 4px solid ${theme.colors.primary};
   }
-
-
 
   --gap: 1rem;
   position: relative;
@@ -75,23 +73,24 @@ const Wrapper = styled(Box)`
   user-select: none;
   gap: var(--gap);
 
-${Marquee} {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: space-around;
-  gap: var(--gap);
-  min-width: 100%;
-  animation: scroll 30s linear infinite;
-}
+  ${Marquee} {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll 30s linear infinite;
+  }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
   }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
-  }
-}
 `;
 
 const Spacer = styled.img`
