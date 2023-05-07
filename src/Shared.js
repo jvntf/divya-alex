@@ -59,7 +59,7 @@ export const H3 = styled(Text)`
 
 export const Detail = styled(Text)`
   line-height: ${theme.fonts.lineHeight.detail}px;
-  font-weight: ${theme.fonts.weight.detail};
+  font-weight: ${props => props.bold ? 700 : theme.fonts.weight.detail};
   text-transform: uppercase;
 `;
 
