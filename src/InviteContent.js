@@ -27,6 +27,7 @@ const Content = styled(Box)`
   min-height: 100%;
   background-color: ${theme.colors.background};
 
+
   @media screen and (min-width: 450px) {
     height: 100%;
     min-height: 100%;

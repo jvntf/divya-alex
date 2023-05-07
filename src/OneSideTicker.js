@@ -103,7 +103,7 @@ ${Marquee} {
 `;
 
 const Spacer = styled.img`
-  margin: 0 4px;
+  margin: auto 4px;
   height: ${theme.fonts.size.detail * 1.5}px;
   width: ${theme.fonts.size.detail * 1.5}px;
 `;

@@ -34,7 +34,6 @@ const Wrapper = styled(Box)`
   @media screen and (min-width: 450px) {
     padding-bottom: 2.5%;
   }*/
-
   @media screen and (min-width: 450px) {
     height: 100%;
   }
