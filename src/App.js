@@ -33,7 +33,13 @@ const Wrapper = styled(Box)`
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  padding: 32px;
+
+  padding: 24px;
+
+  @media screen and (min-width: 450px) {
+    padding: 2.5%;
+  }
+
 
   @media screen and (min-width: 450px) {
     height: 100%;
