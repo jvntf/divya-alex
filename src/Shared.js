@@ -18,22 +18,22 @@ export const theme = {
   fonts: {
     size: {
       h1: 100,
-      h2: 15,
+      h2: 40,
       h3: 20,
       body: 12,
-      detail: 8
+      detail: 14
     },
     lineHeight: {
       h1: 110,
-      h2: 18,
-      h3: 24,
+      h2: 44,
+      h3: 26,
       body: 14,
-      detail: 10
+      detail: 18
     },
     weight: {
       h1: 400,
       h2: 400,
-      h3: 700,
+      h3: 400,
       body: 400,
       detail: 400
     }
@@ -46,8 +46,6 @@ export const Text = styled(Box)`
 `;
 
 export const H1 = styled(Text)`
-  font-size: ${theme.fonts.size.h1}px;
-  line-height: ${theme.fonts.lineHeight.h1}px;
   font-weight: ${theme.fonts.weight.h1};
 `
 export const H2 = styled(Text)`
@@ -60,3 +58,10 @@ export const H3 = styled(Text)`
   line-height: ${theme.fonts.lineHeight.h3}px;
   font-weight: ${theme.fonts.weight.h3};
 `
+
+export const Detail = styled(Text)`
+  font-size: ${theme.fonts.size.detail}px;
+  line-height: ${theme.fonts.lineHeight.detail}px;
+  font-weight: ${theme.fonts.weight.detail};
+  text-transform: uppercase;
+`;

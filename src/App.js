@@ -7,7 +7,7 @@ import InviteContent from "./InviteContent";
 function App() {
   return (
     <div className="App">
-      <Wrapper p={3}>
+      <Wrapper p={4}>
 
         {/*<Ticker /> */}
         <Box

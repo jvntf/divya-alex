@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Box, theme, H1, H2, H3 } from "./Shared";
+import { Box, theme, H1, H2, H3, Detail } from "./Shared";
 import Graphic from "./assets/graphic.png";
 
 const InviteContent = () => {
@@ -10,21 +10,53 @@ const InviteContent = () => {
       </ImageContainer>
 
       <TextContainer>
-        <Title p={4}>
+        <Title
+          p={4}
+          fontSize={[
+            theme.fonts.size.h1 * 0.5,
+            theme.fonts.size.h1 * 0.75,
+            theme.fonts.size.h1,
+          ]}
+        >
           Divya and
           <br />
           Alexander
         </Title>
-        <Buttons p={4}>
-          <Clickable filled as="a">
-            RSVP
-          </Clickable>
-          <Clickable as="a">Gifts</Clickable>
-        </Buttons>
+
+        <Box
+          p={3}
+          style={{
+            placeSelf: "flex-end",
+            width: "35%",
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px",
+          }}
+        >
+          <H2>July 22, 2023</H2>
+          <H3>Nuptial Mass 2 PM</H3>
+          <Detail mb={2}>
+            Church of St. Leo the Great 176 Ridgeway Avenue Oakland, California
+          </Detail>
+
+          <H3>Dinner Receptioni 5 PM</H3>
+          <Detail>
+            El Cerrito Community Center 7007 Moeser Lane El Cerrito, California
+          </Detail>
+          <Buttons width={1}>
+            <Clickable filled as="a">
+              RSVP
+            </Clickable>
+            <Clickable as="a">Gifts</Clickable>
+          </Buttons>
+
+          <Detail>Details to follow</Detail>
+        </Box>
       </TextContainer>
     </Content>
   );
 };
+
 export default InviteContent;
 
 const Content = styled(Box)`
@@ -63,13 +95,13 @@ const StyledImage = styled.img`
 
 const Buttons = styled(Box)`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 1em;
-  place-self: flex-end;
 `;
 
 const Clickable = styled(H3)`
-  background: white;
+  padding: 4px 16px;
+  color: ${theme.colors.white};
   ${(props) =>
     props.filled
       ? `background: ${theme.colors.primary}`
