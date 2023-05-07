@@ -39,7 +39,6 @@ const Title = styled(H1)`
 `;
 
 const TextContainer = styled(Box)`
-  padding: 32px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -48,4 +47,8 @@ const TextContainer = styled(Box)`
   width: 100%;
   height: 100%;
   z-index: 2;
+  padding: 32px;
+  @media screen and (min-width: 450px) {
+    padding: 32px 64px 32px 32px;
+  }
 `;

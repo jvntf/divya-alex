@@ -5,28 +5,28 @@ const OneSideTicker = () => {
   return (
     <Wrapper>
       <Marquee>
-        <Detail>
+        <H3>
           Christine Farias and Gerard Farias together with Laura Axelsen and
           Feliciano de Jesús Mejía invite you to the wedding of their children
-        </Detail>
+        </H3>
         <Spacer src={Leaf} />
-        <Detail>
+        <H3>
           Christine Farias and Gerard Farias together with Laura Axelsen and
           Feliciano de Jesús Mejía invite you to the wedding of their children
-        </Detail>
+        </H3>
         <Spacer src={Leaf} />
       </Marquee>
 
       <Marquee>
-        <Detail>
+        <H3>
           Christine Farias and Gerard Farias together with Laura Axelsen and
           Feliciano de Jesús Mejía invite you to the wedding of their children
-        </Detail>
+        </H3>
         <Spacer src={Leaf} />
-        <Detail>
+        <H3>
           Christine Farias and Gerard Farias together with Laura Axelsen and
           Feliciano de Jesús Mejía invite you to the wedding of their children
-        </Detail>
+        </H3>
         <Spacer src={Leaf} />
       </Marquee>
     </Wrapper>
@@ -36,10 +36,10 @@ const OneSideTicker = () => {
 export default OneSideTicker;
 
 const Marquee = styled(Box)`
-  ${Detail} {
+  ${H3} {
     display: inline-block;
     color: ${theme.colors.primary};
-    font-size: ${theme.fonts.size.detail}px;
+    font-size:15px;
     margin: 2px 0;
   }
 
@@ -56,11 +56,12 @@ const Marquee = styled(Box)`
 const Wrapper = styled(Box)`
   border-bottom: 4px solid ${theme.colors.primary};
   order: 1;
-  height: 24px;
+  //height: 24px;
+  //
+  padding: 4px;
 
   @media screen and (min-width: 450px) {
-    height: 2.5vw;
-
+    //height: 2.5vw;
     order: 2;
     border-bottom: unset;
     border-top: 4px solid ${theme.colors.primary};

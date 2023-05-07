@@ -22,7 +22,8 @@ export const theme = {
       h2: 24,
       h3: 18,
       body: 12,
-      detail: 12
+      detail: 12,
+      button: 15
     },
     lineHeight: {
       h1: 110,
@@ -55,6 +56,7 @@ export const H2 = styled(Text)`
   font-weight: ${theme.fonts.weight.h2};
 `
 export const H3 = styled(Text)`
+  font-size: ${theme.fonts.size.h3}px;
   line-height: ${theme.fonts.lineHeight.h3}px;
   font-weight: ${theme.fonts.weight.h3};
 `
