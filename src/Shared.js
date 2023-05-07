@@ -12,8 +12,8 @@ export const Box = styled.div`
 export const theme = {
   colors: {
     white: '#ffffff',
-    primary: '#03A95C',
-    background:'#8AC181'
+    primary: '#179b20',
+    background:'#8AC181',
   },
   fonts: {
     size: {

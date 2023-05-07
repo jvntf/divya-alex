@@ -23,6 +23,7 @@ const Content = styled(Box)`
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+  border: 4px solid ${theme.colors.primary};
 `;
 
 
