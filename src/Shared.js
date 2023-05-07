@@ -11,19 +11,20 @@ export const Box = styled.div`
 
 export const theme = {
   colors: {
+    white: '#ffffff',
     primary: '#03A95C',
     background:'#8AC181'
   },
   fonts: {
     size: {
-      h1: 24,
+      h1: 100,
       h2: 15,
       h3: 20,
       body: 12,
       detail: 8
     },
     lineHeight: {
-      h1: 25,
+      h1: 110,
       h2: 18,
       h3: 24,
       body: 14,
@@ -40,7 +41,8 @@ export const theme = {
 }
 
 export const Text = styled(Box)`
-  color: ${theme.colors.primary};
+  font-family: Futura;
+  color: ${theme.colors.white};
 `;
 
 export const H1 = styled(Text)`
@@ -49,12 +51,12 @@ export const H1 = styled(Text)`
   font-weight: ${theme.fonts.weight.h1};
 `
 export const H2 = styled(Text)`
-  font-size: ${theme.fonts.size.h1}px;
+  font-size: ${theme.fonts.size.h2}px;
   line-height: ${theme.fonts.lineHeight.h2}px;
   font-weight: ${theme.fonts.weight.h2};
 `
 export const H3 = styled(Text)`
-  font-size: ${theme.fonts.size.h1}px;
+  font-size: ${theme.fonts.size.h3}px;
   line-height: ${theme.fonts.lineHeight.h3}px;
   font-weight: ${theme.fonts.weight.h3};
 `
