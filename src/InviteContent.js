@@ -53,7 +53,7 @@ const ImageContainer = styled(Box)`
       left: 50%;
       transform: translate(-50%, 0%);
       width: 55%;
-      max-width: 700px;
+      max-width: 70vh;
     }
   }
 `;
