@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import "./App.css";
 import { Box, theme} from "./Shared";
-import Ticker from "./Ticker";
 import InviteContent from "./InviteContent";
+import OneSideTicker from "./OneSideTicker";
 
 function App() {
   return (
     <div className="App">
       <Wrapper>
+        <OneSideTicker />
         <Box
           width={1}
           height={'100%'}
@@ -34,11 +35,12 @@ const Wrapper = styled(Box)`
   justify-content: center;
   box-sizing: border-box;
 
-  padding: 24px;
+  /*
+  padding-bottom: 24px;
 
   @media screen and (min-width: 450px) {
-    padding: 2.5%;
-  }
+    padding-bottom: 2.5%;
+  }*/
 
 
   @media screen and (min-width: 450px) {

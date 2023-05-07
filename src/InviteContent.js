@@ -25,7 +25,6 @@ const Content = styled(Box)`
   width: 100%;
   height: fit-content;
   min-height: 100%;
-  border: 4px solid ${theme.colors.primary};
   background-color: ${theme.colors.background};
 
   @media screen and (min-width: 450px) {
@@ -53,6 +52,7 @@ const ImageContainer = styled(Box)`
       left: 50%;
       transform: translate(-50%, 0%);
       width: 65%;
+      max-width: 750px;
     }
   }
 `;
