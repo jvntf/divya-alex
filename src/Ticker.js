@@ -29,7 +29,8 @@ const Ticker = () => {
         <text
           text-anchor="left"
           style={{
-            fontSize: `${theme.fonts.size.h3}`,
+            fontFamily: 'Futura',
+            fontSize: '12px',
             fill: `${theme.colors.primary}`,
           }}
         >
@@ -38,7 +39,7 @@ const Ticker = () => {
             href="#wavepath"
             side="left"
             startOffset="0%"
-            textLength="900"
+            textLength="1100"
             id="text"
           >
             <animate
@@ -63,7 +64,6 @@ const Wrapper = styled(Box)`
   position: absolute;
 
   #text {
-    font-size: ${theme.fonts.size.h3}px;
     color: ${theme.colors.primary};
   }
 `;

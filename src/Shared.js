@@ -18,15 +18,15 @@ export const theme = {
   fonts: {
     size: {
       h1: 100,
-      h2: 40,
-      h3: 20,
+      h2: 24,
+      h3: 18,
       body: 12,
-      detail: 14
+      detail: 12
     },
     lineHeight: {
       h1: 110,
-      h2: 44,
-      h3: 26,
+      h2: 32,
+      h3: 24,
       body: 14,
       detail: 18
     },

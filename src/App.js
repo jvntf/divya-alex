@@ -8,8 +8,6 @@ function App() {
   return (
     <div className="App">
       <Wrapper>
-
-        <Ticker />
         <Box
 
           backgroundColor={theme.colors.background}
