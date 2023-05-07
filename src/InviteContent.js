@@ -47,6 +47,7 @@ const ImageContainer = styled(Box)`
   }
 
   @media screen and (min-width: 450px) {
+  padding: 0px;
     img {
       position: absolute;
       z-index: 1;
