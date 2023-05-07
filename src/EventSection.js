@@ -58,7 +58,7 @@ const Event = () => {
         </Clickable>
       </Buttons>
 
-      <Detail fontSize={[theme.fonts.size.detail]}>Details to follow</Detail>
+      <Detail mt={theme.fonts.size.detail} fontSize={[theme.fonts.size.detail]}>Details to follow</Detail>
     </Wrap>
   );
 };

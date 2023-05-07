@@ -96,6 +96,6 @@ const Wrapper = styled(Box)`
 
 const Spacer = styled.img`
   margin: auto auto;
-  height: ${theme.fonts.size.button * 1.5}px;
-  width: ${theme.fonts.size.button * 1.5}px;
+  height: ${theme.fonts.size.button + 8}px;
+  width: ${theme.fonts.size.button + 8}px;
 `;

@@ -48,7 +48,10 @@ const TextContainer = styled(Box)`
   height: 100%;
   z-index: 2;
   padding: 32px;
+
+  gap: ${theme.fonts.size.h1mobile}px;
   @media screen and (min-width: 450px) {
+    gap: 0px;
     padding: 32px 64px 32px 32px;
   }
 `;

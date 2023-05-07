@@ -27,7 +27,6 @@ const Content = styled(Box)`
   min-height: 100%;
   background-color: ${theme.colors.background};
 
-
   @media screen and (min-width: 450px) {
     height: 100%;
     min-height: 100%;
@@ -35,6 +34,8 @@ const Content = styled(Box)`
 `;
 
 const ImageContainer = styled(Box)`
+  padding: 32px 32px 0 32px;
+  box-sizing: border-box;
   img {
     position: relative;
     max-width: 100%;
@@ -49,7 +50,7 @@ const ImageContainer = styled(Box)`
     img {
       position: absolute;
       z-index: 1;
-      bottom: 0.2vw;
+      bottom: 36px;
       left: 50%;
       transform: translate(-50%, 0%);
       width: 55%;
