@@ -15,7 +15,7 @@ const Event = () => {
         }}
       >
         <H3 fontSize={[theme.fonts.size.h3]}>Nuptial Mass</H3>
-        <Detail bold>2 PM</Detail>
+        <Detail bold>1 PM</Detail>
       </Box>
       <Detail mb={theme.fonts.size.h3} fontSize={[theme.fonts.size.detail]}>
         Church of St. Leo the Great
