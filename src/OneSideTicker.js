@@ -41,6 +41,7 @@ const Marquee = styled(Box)`
     color: ${theme.colors.primary};
     font-size:15px;
     margin: 2px 0;
+    width: max-content;
   }
 
   @keyframes marquee {
