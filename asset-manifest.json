@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/divya-alex/static/css/main.0eb3a482.css",
-    "main.js": "/divya-alex/static/js/main.a5ad1a09.js",
-    "static/js/787.77b18b7e.chunk.js": "/divya-alex/static/js/787.77b18b7e.chunk.js",
-    "static/media/graphic.png": "/divya-alex/static/media/graphic.e64edb2cfa29756b96e5.png",
-    "index.html": "/divya-alex/index.html",
-    "main.0eb3a482.css.map": "/divya-alex/static/css/main.0eb3a482.css.map",
-    "main.a5ad1a09.js.map": "/divya-alex/static/js/main.a5ad1a09.js.map",
-    "787.77b18b7e.chunk.js.map": "/divya-alex/static/js/787.77b18b7e.chunk.js.map"
+    "main.css": "/static/css/main.0eb3a482.css",
+    "main.js": "/static/js/main.b20af024.js",
+    "static/js/787.77b18b7e.chunk.js": "/static/js/787.77b18b7e.chunk.js",
+    "static/media/graphic.png": "/static/media/graphic.e64edb2cfa29756b96e5.png",
+    "index.html": "/index.html",
+    "main.0eb3a482.css.map": "/static/css/main.0eb3a482.css.map",
+    "main.b20af024.js.map": "/static/js/main.b20af024.js.map",
+    "787.77b18b7e.chunk.js.map": "/static/js/787.77b18b7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0eb3a482.css",
-    "static/js/main.a5ad1a09.js"
+    "static/js/main.b20af024.js"
   ]
 }
