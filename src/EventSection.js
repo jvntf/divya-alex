@@ -53,12 +53,10 @@ const Event = () => {
         >
           RSVP
         </Clickable>
-        <Clickable as="a" filled>
-          Gifts
-        </Clickable>
+        <GiftsButton as="a" filled />
       </Buttons>
 
-      <Detail mt={theme.fonts.size.detail} fontSize={[theme.fonts.size.detail]}>Details to follow</Detail>
+      <Detail mt={theme.fonts.size.detail} fontSize={[theme.fonts.size.detail]}>More details to follow</Detail>
     </Wrap>
   );
 };
@@ -79,6 +77,7 @@ const Clickable = styled(H3)`
   font-size: 15px;
   text-decoration: none;
   padding: 4px;
+  box-sizing: border-box;
   ${(props) =>
     props.filled
       ? `background: ${theme.colors.primary}`
@@ -108,11 +107,27 @@ const Clickable = styled(H3)`
   }
 `;
 
+const GiftsButton = styled(Clickable)`
+  ::after {
+    content: 'Gifts';
+  }
+
+  :hover {
+    background: white;
+    outline: 2px solid ${theme.colors.primary};
+    color: ${theme.colors.primary};
+    cursor: wait;
+    :: after {
+    content: 'Coming Soon';
+    }
+  }
+`;
+
 const Wrap = styled(Box)`
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 200px;
+  width: 220px;
   max-width: 80%;
   place-self: flex-start;
 
