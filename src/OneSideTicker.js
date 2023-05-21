@@ -57,12 +57,9 @@ const Marquee = styled(Box)`
 const Wrapper = styled(Box)`
   border-bottom: 4px solid ${theme.colors.primary};
   order: 1;
-  //height: 24px;
-  //
   padding: 4px;
 
   @media screen and (min-width: 450px) {
-    //height: 2.5vw;
     order: 2;
     border-bottom: unset;
     border-top: 4px solid ${theme.colors.primary};
@@ -76,6 +73,7 @@ const Wrapper = styled(Box)`
   gap: var(--gap);
 
   ${Marquee} {
+    white-space: nowrap;
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
