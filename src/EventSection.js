@@ -127,8 +127,8 @@ const Wrap = styled(Box)`
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 220px;
-  max-width: 80%;
+  min-width: 220px;
+  max-width: 90%;
   place-self: flex-start;
 
   @media screen and (min-width: 450px) {
