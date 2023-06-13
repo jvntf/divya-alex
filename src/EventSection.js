@@ -53,10 +53,19 @@ const Event = () => {
         >
           RSVP
         </Clickable>
-        <GiftsButton as="a" filled />
+        <Clickable
+          as="a"
+          filled
+          target="_blank"
+          href="https://www.zola.com/registry/divyaandalexander"
+        >
+          Gifts
+        </Clickable>
       </Buttons>
 
-      <Detail mt={theme.fonts.size.detail} fontSize={[theme.fonts.size.detail]}>More details to follow</Detail>
+      <Detail mt={theme.fonts.size.detail} fontSize={[theme.fonts.size.detail]}>
+        More details to follow
+      </Detail>
     </Wrap>
   );
 };
@@ -109,7 +118,7 @@ const Clickable = styled(H3)`
 
 const GiftsButton = styled(Clickable)`
   ::after {
-    content: 'Gifts';
+    content: "Gifts";
   }
 
   :hover {
@@ -118,7 +127,7 @@ const GiftsButton = styled(Clickable)`
     color: ${theme.colors.primary};
     cursor: wait;
     :: after {
-    content: 'Coming Soon';
+      content: "Coming Soon";
     }
   }
 `;
